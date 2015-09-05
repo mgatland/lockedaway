@@ -1,0 +1,69 @@
+@font-face {
+ font-family: 'Inconsolata';
+ font-style: normal;
+ font-weight: normal;
+ src: local('Inconsolata'), url('Inconsolata.woff') format('woff');
+}
+
+.input-line {
+ display: -webkit-box;
+ -webkit-box-orient: horizontal;
+ -webkit-box-align: stretch;
+ display: box;
+ box-orient: horizontal;
+ box-align: stretch;
+ clear: both;
+ -webkit-box-flex: 1;
+ box-flex: 1;
+}
+.prompt {
+ white-space: nowrap;
+ color: #6699FF;
+ margin-right: 7px;
+ display: -webkit-box;
+ -webkit-box-pack: center;
+ -webkit-box-orient: vertical;
+ display: box;
+ box-pack: center;
+ box-orient: vertical;
+ -webkit-user-select: none;
+ user-select: none;
+}
+.cmdline {
+ outline: none;
+ background-color: transparent;
+ margin: 0;
+ width: 100%;
+ font: inherit;
+ border: none;
+ color: inherit;
+ display: inline-block;
+ text-align: -webkit-auto;
+}
+.input-line > div:nth-child(2) {
+-webkit-box-flex: 1;
+box-flex: 1;
+}
+
+b {
+ color: #CCFFFF;
+}
+
+body {
+font-family: Inconsolata, monospace;
+color: white;
+background: black;
+font-size: 1.4em;
+}
+
+.interlace {
+ position: absolute;
+ left: 0;
+ top: 0;
+ background: url(interlace.png) top left repeat, rgba(255,255,255,0.5);
+ width: 100%;
+ height: 100%;
+ opacity: 0.3;
+ z-index: 10;
+ pointer-events: none;
+}
